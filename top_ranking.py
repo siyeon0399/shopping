@@ -21,7 +21,7 @@ for i in range(50):
     point = points[i].text.strip().split('\n')[0] if i < len(points) else '0'
     print('{:3}위. {}의 {} {} 리뷰 {}개)'.format(i + 1, item_title, list_info, price, point))
 
-search_term = input('검색하고 싶은 브랜드를 입력하세요: ')
+search_term = input('순위권 내 검색하고 싶은 브랜드를 입력하세요: ')
 
 count = 0
 for i in range(50):

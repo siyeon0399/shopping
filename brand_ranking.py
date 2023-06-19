@@ -16,7 +16,7 @@ for i in range(len(brand_names)):
     print('{:3}위. {}({})'.format(i + 1, brand_name, brand_name_en))
 
 # 검색 기능
-search_query = input("검색할 브랜드 이름을 입력하세요: ")
+search_query = input("브랜드를 검색하면 순위를 알 수 있습니다: ")
 
 found = False
 for i in range(len(brand_names)):
@@ -25,7 +25,7 @@ for i in range(len(brand_names)):
     
     if search_query in brand_name or search_query in brand_name_en:
         found = True
-        print('브랜드가 {}위에서 찾았습니다:\n{}({})'.format(i + 1, brand_name, brand_name_en))
+        print('해당 브랜드는 {}위입니다:\n{}({})'.format(i + 1, brand_name, brand_name_en))
 
 if not found:
     print('브랜드를 찾을 수 없습니다.')
